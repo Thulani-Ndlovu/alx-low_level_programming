@@ -34,6 +34,7 @@ void times_table(void)
 			}
 			else if ((i * j) < 10 && j == 9)
 			{
+				_putchar(' ');
 				_putchar((i * j) + '0');
 			}
 		}
