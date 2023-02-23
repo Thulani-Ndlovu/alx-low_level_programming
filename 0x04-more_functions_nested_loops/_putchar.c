@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
 * _putchar - prints characters
 * @ch: holds a character
