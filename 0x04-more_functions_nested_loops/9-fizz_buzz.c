@@ -1,11 +1,11 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
-* main - Fizz-Buzz test
-* Return: 0 (success)
+* Fizz_Buzz - Fizz-Buzz test
 */
 
-int main(void)
+void Fizz_Buzz(void)
 {
 	int i;
 
