@@ -20,13 +20,13 @@ int main(void)
 	{
 		password[i] = rand() % 78;
 		sum = sum + (password[i] + '0');
-		_putchar(password[i] + '0');
+		putchar(password[i] + '0');
 
 		if ((2772 - sum) - '0' < 78)
 		{
 			n = 2772 - sum - '0';
 			sum = sum + n;
-			_putchar(n + '0');
+			putchar(n + '0');
 			break;
 		}
 	}
