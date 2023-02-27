@@ -9,13 +9,14 @@
 
 int main(void)
 {
-	srand(time(NULL));
 	char digits[10] = "0123456789";
 	char small_letters[26] = "abcdefghijklmnopqrstuvwxyz";
 	char upper_case[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char characters[17] = "!@#$%^&*+_-?><|/";
 	int i = 0;
 	char password[8];
+
+	srand(time(NULL));
 
 	while (i < 8)
 	{
