@@ -9,13 +9,15 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int len_s1;
-	int len_s2;
+	int len_s1 = 0;
+	int len_s2 = 0;
 	unsigned int tally = 0;
 	int i;
 
-	len_s1 = strlen(s1);
-	len_s2 = strlen(s2);
+	while (s1[len_s1] != '\0')
+		len_s1++;
+	while (s2[len_s2] != '\0')
+		len_s2++;
 
 	if (len_s1 <= len_s2)
 	{

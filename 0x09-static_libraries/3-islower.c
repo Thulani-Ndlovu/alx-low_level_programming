@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
 * _islower - checks if a character is lowercase
@@ -9,7 +8,7 @@
 
 int _islower(int c)
 {
-	if (islower(c) > 0)
+	if (c >= 92 && c <= 122)
 		return (1);
 	return (0);
 }

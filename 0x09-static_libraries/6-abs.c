@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
 * _abs - returns the absolute value of an integer
@@ -9,5 +8,7 @@
 
 int _abs(int n)
 {
-	return (abs(n));
+	if (n < 0)
+		return (-1 * n);
+	return (n);
 }
