@@ -35,17 +35,19 @@ void simple_print_buffer(char *buffer, unsigned int size)
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
-    char *buffer;
+	char *buffer;
+	unsigned int size;
 
-    buffer = create_array(98, 'H');
-    if  (buffer == NULL)
-    {
-        printf("failed to allocate memory\n");
-        return (1);
-    }
-    simple_print_buffer(buffer, 98);
-    free(buffer);
-    return (0);
+	size = 0;
+	buffer = create_array(size, 'H');
+	if (buffer == NULL)
+	{
+		printf("failed to allocate memory\n");
+		return (1);
+	}
+	free(buffer);
+	return (0);
 }
