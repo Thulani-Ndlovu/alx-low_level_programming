@@ -11,11 +11,18 @@ char *_strdup(char *str)
 {
 	char *ptr;
 	unsigned int i = 0;
+	unsigned int size = 0;
+
+	while (*str)
+	{
+		size++;
+		str++;
+	}
 
 	if (str == NULL)
 		return (NULL);
 
-	ptr = (char *) malloc(sizeof(char));
+	ptr = (char *) malloc(size * sizeof(char));
 
 	if (ptr == 0)
 		return (NULL);
