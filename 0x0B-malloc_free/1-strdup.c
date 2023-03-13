@@ -13,10 +13,9 @@ char *_strdup(char *str)
 	unsigned int i = 0;
 	unsigned int size = 0;
 
-	while (*str)
+	while (str[size] != '\0')
 	{
 		size++;
-		str++;
 	}
 
 	if (str == NULL)
