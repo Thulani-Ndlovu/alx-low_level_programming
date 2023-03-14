@@ -17,7 +17,7 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	ptr = (char *) malloc(2 * 8 * ac * sizeof(*ptr));
+	ptr = (char *) malloc(2 * 2 * ac * sizeof(*ptr));
 	for (i = 0; i < ac; i++)
 	{
 		strcat(ptr, av[i]);
