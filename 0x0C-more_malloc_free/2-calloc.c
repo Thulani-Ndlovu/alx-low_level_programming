@@ -10,13 +10,20 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
+	unsigned int count = 0;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	ptr = malloc(size);
+	ptr = malloc(size * nmemb);
 
 	if (ptr == NULL)
 		return (NULL);
+
+	while (count < nmemb * size)
+	{
+		ptr[count] = 0;
+		count++;
+	}
 	return (ptr);
 }
