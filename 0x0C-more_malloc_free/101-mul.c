@@ -8,7 +8,7 @@
 * Return: 0 (success)
 */
 
-int main(int ac, char **argv)
+int main(int ac, char *argv[])
 {
 	int i, j;
 	unsigned long mul = 0, num1 = 0, num2 = 0;
