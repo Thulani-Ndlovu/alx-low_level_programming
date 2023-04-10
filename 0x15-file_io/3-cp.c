@@ -62,8 +62,7 @@ int main(int argc, char **argv)
 	do {
 		if (old == -1 || READ == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file"
-					"%s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			free(text);
 			exit(98);
 		}
@@ -81,6 +80,7 @@ int main(int argc, char **argv)
 
 	free(text);
 	CLOSE(old);
+	CLOSE(new);
 
 	return (0);
 }
