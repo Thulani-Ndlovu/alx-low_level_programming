@@ -9,11 +9,12 @@
 size_t dlistint_len(const dlistint_t *h)
 {
 	size_t elementCount = 0;
+	const dlistint_t *temp = h;
 
-	while (h != NULL)
+	while (temp != NULL)
 	{
 		elementCount++;
-		h = h->next;
+		temp = temp->next;
 	}
 	return (elementCount);
 }
